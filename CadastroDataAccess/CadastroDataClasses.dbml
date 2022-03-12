@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CADASTROPESSOA" Class="CadastroDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JJJUNIOR-ACER\JOANESSERVER;Initial Catalog=CADASTROPESSOA;User ID=sa" SettingsObjectName="CadastroDataAccess.Properties.Settings" SettingsPropertyName="CADASTROPESSOAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Pessoa" Member="Pessoas">
+    <Type Name="Pessoa">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Religiao" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="RG" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="CPF" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Nascimento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Sexo" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Data_Criacao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Pessoa_Endereco" Member="Enderecos" ThisKey="Id" OtherKey="IdPessoa" Type="Endereco" />
+      <Association Name="Pessoa_Contato" Member="Contatos" ThisKey="Id" OtherKey="IdPessoa" Type="Contato" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Endereco" Member="Enderecos">
+    <Type Name="Endereco">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Rua" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Bairro" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Cidade" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="UF" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Pessoa_Endereco" Member="Pessoa" ThisKey="IdPessoa" OtherKey="Id" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Contato" Member="Contatos">
+    <Type Name="Contato">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="Numero" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="IdPessoa" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Pessoa_Contato" Member="Pessoa" ThisKey="IdPessoa" OtherKey="Id" Type="Pessoa" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

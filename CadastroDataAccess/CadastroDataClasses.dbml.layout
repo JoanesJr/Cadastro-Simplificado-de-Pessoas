@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CadastroDataClasses">
+  <DataContextMoniker Name="/CadastroDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="893150d0-ab10-4230-a5a8-23aeac7a2471" absoluteBounds="0.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/CadastroDataClassesDataContext/Pessoa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6e9d95be-d8ed-409c-8b0a-3b6a45e35195" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29d6d66a-5821-47f3-9ba3-45758f7495dc" absoluteBounds="4.125, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/CadastroDataClassesDataContext/Endereco" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0fe73df6-f5bb-4e5a-bf0b-1db64af9ec1b" absoluteBounds="4.14, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 1.57774983723958); (4.125 : 1.57774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/CadastroDataClassesDataContext/Pessoa/Pessoa_Endereco" />
+      <nodes>
+        <classShapeMoniker Id="893150d0-ab10-4230-a5a8-23aeac7a2471" />
+        <classShapeMoniker Id="29d6d66a-5821-47f3-9ba3-45758f7495dc" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f3b7a1dc-bfd9-451d-a544-00fe07224dea" absoluteBounds="3, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/CadastroDataClassesDataContext/Contato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="816b3da0-5ae6-4312-8a91-023e35357d82" absoluteBounds="3.015, 3.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 2.84780110677083); (3 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/CadastroDataClassesDataContext/Pessoa/Pessoa_Contato" />
+      <nodes>
+        <classShapeMoniker Id="893150d0-ab10-4230-a5a8-23aeac7a2471" />
+        <classShapeMoniker Id="f3b7a1dc-bfd9-451d-a544-00fe07224dea" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

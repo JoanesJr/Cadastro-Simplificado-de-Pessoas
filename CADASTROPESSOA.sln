@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CADASTROPESSOA", "CADASTROPESSOA\CADASTROPESSOA.csproj", "{70E418B6-CBCB-4FDB-B462-CB5D3EB65349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroDataAccess", "CadastroDataAccess\CadastroDataAccess.csproj", "{E037EABC-8DB9-49A4-93F6-F0B04A53E38C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E418B6-CBCB-4FDB-B462-CB5D3EB65349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E418B6-CBCB-4FDB-B462-CB5D3EB65349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E418B6-CBCB-4FDB-B462-CB5D3EB65349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E418B6-CBCB-4FDB-B462-CB5D3EB65349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E037EABC-8DB9-49A4-93F6-F0B04A53E38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E037EABC-8DB9-49A4-93F6-F0B04A53E38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E037EABC-8DB9-49A4-93F6-F0B04A53E38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E037EABC-8DB9-49A4-93F6-F0B04A53E38C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FBF8768-3CC3-4EEB-975A-70FB25AF054A}
+	EndGlobalSection
+EndGlobal

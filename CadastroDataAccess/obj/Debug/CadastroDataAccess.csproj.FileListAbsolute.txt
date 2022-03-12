@@ -1,0 +1,7 @@
+D:\C#\WindowsForm\CADASTROPESSOA\CadastroDataAccess\bin\Debug\CadastroDataAccess.dll.config
+D:\C#\WindowsForm\CADASTROPESSOA\CadastroDataAccess\bin\Debug\CadastroDataAccess.dll
+D:\C#\WindowsForm\CADASTROPESSOA\CadastroDataAccess\bin\Debug\CadastroDataAccess.pdb
+D:\C#\WindowsForm\CADASTROPESSOA\CadastroDataAccess\obj\Debug\CadastroDataAccess.csproj.AssemblyReference.cache
+D:\C#\WindowsForm\CADASTROPESSOA\CadastroDataAccess\obj\Debug\CadastroDataAccess.csproj.CoreCompileInputs.cache
+D:\C#\WindowsForm\CADASTROPESSOA\CadastroDataAccess\obj\Debug\CadastroDataAccess.dll
+D:\C#\WindowsForm\CADASTROPESSOA\CadastroDataAccess\obj\Debug\CadastroDataAccess.pdb
